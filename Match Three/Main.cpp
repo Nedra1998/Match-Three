@@ -1,5 +1,6 @@
 #include "Libraries.h"
 #include "Hephaestus.h"
+#include "Menu.h"
 using namespace std;
 Hephaestus H;
 void Key_Call(GLFWwindow* Win, int key, int scancode, int action, int mods){
@@ -23,10 +24,11 @@ int main(){
 	glfwSetWindowSizeCallback(Win, Window_Call);
 	srand(time(NULL));
 	/*>>>>>Place Before Start Code Here<<<<<*/
-	
+	Menu Men;
+	int Menu = 1;
 	while (!glfwWindowShouldClose(Win)){
 		/*>>>>>Place While Running Code Here<<<<<*/
-		
+		Menu = Men.Initilize_Menu(Menu, H, Win);
 		H.Frame();
 	}
 	H.Terminate_Log();

@@ -1,4 +1,4 @@
-Sun Mar 29 16:11:06 2015
+Sun Mar 29 19:26:33 2015
 [SUCCESS]>>Opened Log File<<[Logging]
 [SUCCESS]>>Loaded Window Data<<[Window]
 [INFORMATION]>>Windowed Mode Enabled<<[Window]
@@ -8,5 +8,7 @@ Sun Mar 29 16:11:06 2015
 [SUCCESS]>>Loaded GLEW<<[Window]
 [SUCCESS]>>Loaded Renderer<<[Window]
 [SUCCESS]>>Loaded Version<<[Window]
+[SUCCESS]>>Opened Textured Vertex Shader.txt<<[Shaders]
+[SUCCESS]>>Opened Textured Fragment Shader.txt<<[Shaders]
 [SUCCESS]>>Closed Log File<<[Logging]
-Sun Mar 29 16:11:10 2015
+Sun Mar 29 19:26:58 2015
