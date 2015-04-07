@@ -33,7 +33,7 @@ int Menu::Main_Menu(){
 	H_Menu.Create_New_Layer();
 	H_Menu.Create_New_Layer();
 	H_Menu.Layers[0]->Initilize_Object(2);
-	H_Menu.Layers[0]->Textured_Objects[0]->New_Textured_Object("Textures/BackgroundB", 4, 1, 1, 0, 0);
+	H_Menu.Layers[0]->Textured_Objects[0]->New_Textured_Object("Textures/Menu Background", 4, 1, 1, 0, 0);
 	H_Menu.Layers[1]->Initilize_Object(4);
 	H_Menu.Layers[1]->Button_Objects[0]->New_Button("MATCH THREE", "Textures/Buttons/Transparent", "Basic/Black", 0.5, 0.2);
 	H_Menu.Layers[1]->Button_Objects[0]->Translate_Button(0.0, 0.7, 0.0);
@@ -60,7 +60,7 @@ int Menu::Main_Menu(){
 		}
 		if (Layer == 1 && Button == 1){
 			Good = false;
-			Go_To = 2;
+			Go_To =11;
 		}
 		if (Layer == 1 && Button == 2){
 			Good = false;
@@ -80,6 +80,7 @@ int Menu::Main_Menu(){
 		H_Menu.Frame();
 	}
 	H_Menu.Clear_Mouse();
+	H_Menu.Clear_All_Layers();
 	return(Go_To);
 }
 int Menu::Games_Menu(){
@@ -89,7 +90,7 @@ int Menu::Games_Menu(){
 	H_Menu.Create_New_Layer();
 	H_Menu.Create_New_Layer();
 	H_Menu.Layers[0]->Initilize_Object(2);
-	H_Menu.Layers[0]->Textured_Objects[0]->New_Textured_Object("Textures/BackgroundB", 4, 1, 1, 0, 0);
+	H_Menu.Layers[0]->Textured_Objects[0]->New_Textured_Object("Textures/Menu Background", 4, 1, 1, 0, 0);
 	H_Menu.Layers[1]->Initilize_Object(4);
 	H_Menu.Layers[1]->Button_Objects[0]->New_Button("NEW GAME", "Textures/Buttons/Transparent", "Basic/Black", 0.5, 0.2);
 	H_Menu.Layers[1]->Button_Objects[0]->Translate_Button(0.0, 0.7, 0.0);
@@ -141,6 +142,7 @@ int Menu::Games_Menu(){
 		H_Menu.Frame();
 	}
 	H_Menu.Clear_Mouse();
+	H_Menu.Clear_All_Layers();
 	return(Go_To);
 }
 int Menu::Scores_Menu(){

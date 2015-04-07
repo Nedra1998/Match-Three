@@ -1,9 +1,11 @@
 #include "Libraries.h"
 #include "Hephaestus.h"
 #include "Menu.h"
+#include "Game.h"
 using namespace std;
 Hephaestus H;
 Menu Men;
+Game Gam;
 int Stage = 1;
 void Key_Call(GLFWwindow* Win, int key, int scancode, int action, int mods){
 	H.Key_Call_Back(Win, key, scancode, action, mods);
@@ -11,6 +13,9 @@ void Key_Call(GLFWwindow* Win, int key, int scancode, int action, int mods){
 void Mouse_Call(GLFWwindow* Win, int button, int action, int mods){
 	if (Stage == 1){
 		Men.H_Menu.Mouse_Call_Back(Win, button, action, mods);
+	}
+	else if (Stage == 2){
+		Gam.H_Game.Mouse_Call_Back(Win, button, action, mods);
 	}
 	H.Mouse_Call_Back(Win, button, action, mods);
 }
@@ -41,7 +46,10 @@ int main(){
 			H.Clear_Mouse();
 		}
 		if (Stage == 2){
-
+			H.Clear_All_Layers();
+			Gam.Play_Game(H, Win);
+			Menu = 2;
+			Stage = 1;
 		}
 		if (Menu == -1){
 			glfwSetWindowShouldClose(Win, 1);

@@ -478,6 +478,9 @@ float Object::Return_Float_Value(int val){
 	if (val == 3){
 		return(Object_Data[3]);
 	}
+	if (val == 4){
+		return(Object_Data[4]);
+	}
 	if (val == 6){
 		return(Object_Data[6]);
 	}

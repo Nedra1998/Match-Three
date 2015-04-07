@@ -26,6 +26,7 @@ void Layer::Display_All_Text_Objects(){
 }
 void Layer::Display_All_Button_Objects(){
 	for (unsigned i = 0; i < Button_Objects.size(); i++){
+		
 		Button_Objects[i]->Display_Object();
 	}
 }
