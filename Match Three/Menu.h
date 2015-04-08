@@ -9,6 +9,8 @@ private:
 	int Settings_Menu();
 	int Games_Menu();
 	int Scores_Menu();
+	int Levels_Menu();
+	int Genoration_Type_Menu();
 	bool Close();
 public:
 	Hephaestus H_Menu;

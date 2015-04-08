@@ -102,6 +102,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DEV.data" />
+    <None Include="Levels\1.Level" />
+    <None Include="Save Data.Save" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

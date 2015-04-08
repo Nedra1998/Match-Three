@@ -39,16 +39,16 @@ int main(){
 		/*>>>>>Place While Running Code Here<<<<<*/
 		if (Stage == 1){
 			Menu = Men.Initilize_Menu(Menu, H, Win);
-			if (Menu > 10 && Menu < 20){
+			if (Menu >= 10){
 				Stage = 2;
-				Menu = Menu - 10;
+				Menu = Menu / 10;
 			}
 			H.Clear_Mouse();
 		}
 		if (Stage == 2){
 			H.Clear_All_Layers();
-			Gam.Play_Game(H, Win);
-			Menu = 2;
+			Gam.Initilize_Game("Levels/" + to_string(Menu) + ".Level", H, Win);
+			Menu = 5;
 			Stage = 1;
 		}
 		if (Menu == -1){

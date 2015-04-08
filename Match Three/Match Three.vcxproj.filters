@@ -33,6 +33,12 @@
     <Filter Include="Header Files\Core Headers">
       <UniqueIdentifier>{b3d56a67-4127-4a01-8c50-faef98354b1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game Data">
+      <UniqueIdentifier>{69ce1d49-b434-4d1d-bf8a-f783694053e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Levels">
+      <UniqueIdentifier>{495db213-86e3-41b8-9cf8-94b072bec79b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -126,6 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DEV.data">
+      <Filter>Text Files</Filter>
+    </None>
+    <None Include="Save Data.Save">
+      <Filter>Game Data</Filter>
+    </None>
+    <None Include="Levels\1.Level">
       <Filter>Text Files</Filter>
     </None>
   </ItemGroup>
